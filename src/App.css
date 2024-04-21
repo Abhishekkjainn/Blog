@@ -1,0 +1,259 @@
+body{
+  margin: 0;padding: 0;
+  width: 100%;
+  font-family: 'Poppins';
+}
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: transparent;
+}
+
+
+/*Header*/
+.headermain{
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.133);
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainlogoheader{
+  width: 30px;
+}
+.options{
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  padding-right: 30px;
+}
+.write{
+  width: auto;
+  height: 60%;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-left: 20px;
+}
+.writetext{
+  margin-right: 20px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.writebutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.headerimage{
+  width: 20px;
+  margin-left: 20px;
+}
+.headerimage:hover{
+  cursor: pointer;
+}
+.accountprofile{
+  margin-left: 20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 40px;
+  background-color: royalblue;
+}
+.accountmenuoptions{
+  z-index: 1000;
+  width: 250px;
+  min-height: 200px;
+  /* border: 1px solid rgba(0, 0, 0, 0.24); */
+  border-radius: 20px;
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: white;
+}
+
+/*Header*/
+
+
+/*Main body*/
+.mainbody{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Main Body*/
+
+
+
+/*Main Feed*/
+.feedmain{
+  width: 65%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid rgba(0, 0, 0, 0.133);
+}
+
+.articlesection{
+  width: 70%;
+  min-height: 100vh;
+  max-height: fit-content;
+  background-color: black; 
+}
+/*MainFeed*/
+
+
+
+/*Sidebar*/
+.sidebar{
+  width: 35%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Sidebar*/
+
+
+/*Writepage*/
+.writepage{
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: black; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.publishbutton{
+  width: 150px;
+  height: 40px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:80px;
+  right: 20px;
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: royalblue;
+}
+.publishbutton:hover{
+  cursor: pointer;
+}
+.writingdiv{
+  width: 50%;
+  min-height: 100vh;
+}
+.blogmaintitle{
+  margin-top: 100px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  max-height: fit-content;
+  font-size: 46px;
+  font-weight: 600;
+  resize: none; /* Allow vertical resizing */
+  padding: 20px;
+  border-left: 4px solid royalblue;
+  font-family: 'Poppins';
+}
+
+
+.blogsubhead1{
+  margin-top: 20px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  resize: none; /* Allow vertical resizing */
+  padding: 8px;
+  border-left: 4px solid orange;
+  font-family: 'Poppins';
+}
+.blogsubhead1:focus{
+  outline: none;
+}
+
+textarea:focus{
+  outline: none;
+}
+textarea::placeholder{
+  color: rgb(183, 183, 183);
+  font-weight: 600;
+}
+/*writepage*/
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 1000px){
+
+
+  /*Siedbar responsive*/
+  .sidebar{
+    display: none;
+  }
+  /*Sidebar responsive*/
+
+
+
+  /*Main feeed responsive*/
+  .feedmain{
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .articlesection{
+    width: 90%;
+    min-height: 100vh;
+    max-height: fit-content;
+    background-color: black; 
+  }
+  /*Main feeed responsive*/
+
+
+  /*writepage*/
+  .writepageheader{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 65px;
+    background-color: white;
+  }
+
+
+
+}
